@@ -1,4 +1,18 @@
+# Ignore front-end files in language stats
 *.css linguist-vendored
 *.js linguist-vendored
+*.html linguist-vendored
+
+# Ignore Django static files
 static/* linguist-vendored
-assets/* linguist-vendored
+*/static/* linguist-vendored
+
+# Ignore template files inside any app
+templates/* linguist-vendored
+*/templates/* linguist-vendored
+
+# Ignore media files
+media/* linguist-vendored
+
+# Keep Python files as main language
+*.py linguist-detectable=true
